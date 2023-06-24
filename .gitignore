@@ -1,5 +1,5 @@
 # Ignore cache files
-.cache/
+.cache
 
 # Ignore the credentials file
 credentials.json
