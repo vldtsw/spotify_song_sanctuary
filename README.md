@@ -6,6 +6,7 @@ This script allows you to backup your liked songs from Spotify to a local JSON f
 2. Install the required Python packages by running the following command in the project directory:
 
 `pip install -r requirements.txt`
+
 3. Run the script by executing the following command:
 
 `python main.py`
