@@ -19,18 +19,12 @@ The script will authenticate with Spotify using the provided credentials and sta
 
 Once the backup is complete, a JSON file named `spotify_backup_<date>.json` will be created in the same directory. This file contains the details of your liked songs.
 
-### Additional Information
-
-The backup file is overwritten each time you run the script, so make sure to save a copy if needed.
-
-The .gitignore file is configured to exclude the credentials.json file and any backup files from being committed to the repository.
-
 ### Getting Spotify Credentials
 
-To use this script, you need to obtain the following credentials from the Spotify Developer Dashboard:
+To use this script, you need to obtain the following credentials from the [Spotify Developer Dashboard](https://developer.spotify.com/):
 
 + Client ID: Unique identifier for your application.
 + Client Secret: Secret key used for authenticating your application.
 + Redirect URI: URL where the user will be redirected after authentication.
 
-Make sure to have these credentials ready before running the script for the first time.
+More about backup JSON file structure [here](https://developer.spotify.com/documentation/web-api/reference/get-users-saved-tracks) (check "items" in response sample).
