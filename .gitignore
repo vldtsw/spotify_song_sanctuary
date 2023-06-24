@@ -1,3 +1,11 @@
-.cache
+# Ignore cache files
+.cache/
+
+# Ignore the credentials file
 credentials.json
-tracks.json
+
+# Ignore the tracks backup file
+spotify_backup_*.json
+
+# Ignore IDE specific files
+.idea/
