@@ -41,6 +41,7 @@ def prompt_credentials() -> dict[str, str]:
             },
         ]
     )
+    credentials = {key: value.strip() for key, value in credentials.items()}
     with open(CREDENTIALS_FILE, 'w') as file:
         json.dump(credentials, file)
     return credentials
@@ -70,6 +71,8 @@ def backup_liked_songs(spotify: Spotify) -> None:
     file_name = f"spotify_backup_{date.today()}.json"
     with open(file_name, 'w') as file:
         json.dump(track_backup, file, indent=4)
+
+    print(f'Backup of {len(track_backup)} songs saved to {file_name}')
 
 
 def main():
